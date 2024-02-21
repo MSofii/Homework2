@@ -3,7 +3,7 @@
 
 namespace Homework2 {
 
-   
+
 
     class Program {
 
@@ -22,7 +22,7 @@ namespace Homework2 {
 
             Console.WriteLine("Input the transaction code of the trade:");
             TransactionType trcType;
-            string  userInputTrans = Console.ReadLine();
+            string userInputTrans = Console.ReadLine();
             trcType = (TransactionType)Enum.Parse(typeof(TransactionType), userInputTrans, true);
 
             int sign = trcType == TransactionType.Buy ? 1 : -1;
@@ -32,8 +32,8 @@ namespace Homework2 {
             int curVal = sign * nominal * price;
 
             Console.WriteLine($"Current value ={curVal}");
-            
-            int pL = (price - priceOrigin)*nominal*factor;
+
+            int pL = (price - priceOrigin) * nominal * factor;
             Console.WriteLine($"PL equals {pL}");
 
 
