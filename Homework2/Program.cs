@@ -3,7 +3,7 @@
 
 namespace Homework2 {
 
-    enum TransactionType { Buy, Sell }
+   
 
     class Program {
 
