@@ -3,8 +3,6 @@
 
 namespace Homework2 {
 
-
-
     class Program {
 
         static void Main(string[] args) {
@@ -26,16 +24,13 @@ namespace Homework2 {
             trcType = (TransactionType)Enum.Parse(typeof(TransactionType), userInputTrans, true);
 
             int sign = trcType == TransactionType.Buy ? 1 : -1;
-
             int factor = trcType == TransactionType.Buy ? 0 : 1;
-
             int curVal = sign * nominal * price;
 
             Console.WriteLine($"Current value ={curVal}");
 
             int pL = (price - priceOrigin) * nominal * factor;
             Console.WriteLine($"PL equals {pL}");
-
 
             Console.ReadKey();
         }
